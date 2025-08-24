@@ -1,0 +1,74 @@
+{
+    "Table": {
+        "Name": "stock_data_table",
+        "DatabaseName": "stock_data_db",
+        "Description": "",
+        "CreateTime": "2025-08-24T16:10:01-05:00",
+        "UpdateTime": "2025-08-24T16:10:01-05:00",
+        "Retention": 0,
+        "StorageDescriptor": {
+            "Columns": [
+                {
+                    "Name": "symbol",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "timestamp",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "open",
+                    "Type": "double",
+                    "Comment": ""
+                },
+                {
+                    "Name": "high",
+                    "Type": "double",
+                    "Comment": ""
+                },
+                {
+                    "Name": "low",
+                    "Type": "double",
+                    "Comment": ""
+                },
+                {
+                    "Name": "price",
+                    "Type": "double",
+                    "Comment": ""
+                },
+                {
+                    "Name": "previous_close",
+                    "Type": "double",
+                    "Comment": ""
+                },
+                {
+                    "Name": "volume",
+                    "Type": "bigint",
+                    "Comment": ""
+                }
+            ],
+            "Location": "s3://stock-market-data-bucket-0772/raw-data/",
+            "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+            "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+            "Compressed": false,
+            "NumberOfBuckets": 0,
+            "SerdeInfo": {
+                "SerializationLibrary": "org.openx.data.jsonserde.JsonSerDe"
+            },
+            "SortColumns": [],
+            "StoredAsSubDirectories": false
+        },
+        "PartitionKeys": [],
+        "TableType": "EXTERNAL_TABLE",
+        "Parameters": {
+            "classification": "json"
+        },
+        "CreatedBy": "arn:aws:iam::968632140392:root",
+        "IsRegisteredWithLakeFormation": false,
+        "CatalogId": "968632140392",
+        "VersionId": "0",
+        "IsMultiDialectView": false
+    }
+}

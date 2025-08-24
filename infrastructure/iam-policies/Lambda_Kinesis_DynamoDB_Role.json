@@ -1,0 +1,20 @@
+{
+    "AttachedPolicies": [
+        {
+            "PolicyName": "AmazonKinesisFullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonKinesisFullAccess"
+        },
+        {
+            "PolicyName": "AWSLambdaBasicExecutionRole",
+            "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+        },
+        {
+            "PolicyName": "AmazonDynamoDBFullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+        },
+        {
+            "PolicyName": "AmazonS3FullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+        }
+    ]
+}

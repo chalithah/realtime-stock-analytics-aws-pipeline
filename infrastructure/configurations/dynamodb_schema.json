@@ -1,0 +1,55 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "symbol",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "timestamp",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "stock-market-data",
+        "KeySchema": [
+            {
+                "AttributeName": "symbol",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "timestamp",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2025-08-24T15:32:46.467000-05:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 0,
+        "ItemCount": 0,
+        "TableArn": "arn:aws:dynamodb:us-east-1:968632140392:table/stock-market-data",
+        "TableId": "cdfb9211-e617-42e4-a0b8-ef0a72c3ca8f",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2025-08-24T15:32:46.467000-05:00"
+        },
+        "StreamSpecification": {
+            "StreamEnabled": true,
+            "StreamViewType": "NEW_IMAGE"
+        },
+        "LatestStreamLabel": "2025-08-24T21:55:16.162",
+        "LatestStreamArn": "arn:aws:dynamodb:us-east-1:968632140392:table/stock-market-data/stream/2025-08-24T21:55:16.162",
+        "TableClassSummary": {
+            "TableClass": "STANDARD"
+        },
+        "DeletionProtectionEnabled": false,
+        "WarmThroughput": {
+            "ReadUnitsPerSecond": 12000,
+            "WriteUnitsPerSecond": 4000,
+            "Status": "ACTIVE"
+        }
+    }
+}
