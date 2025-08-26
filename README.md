@@ -137,6 +137,10 @@ The pipeline implements a **6-stage enterprise data workflow**:
 ![SNS Subscription Confirmed](docs/images/sns-subscription-confirmed.png)
 *Amazon SNS topic "Stock_Trend_Alerts" with confirmed email subscription ready to receive automated trading signals and anomaly notifications*
 
+### **🔔 Real-Time Trading Alerts**
+![SNS Trading Alert](docs/images/sns-trading-alert.png)
+*Automated trading signal delivered via Amazon SNS - "AAPL is in an **Uptrend**! Consider a buy opportunity." - demonstrating the SMA crossover detection working in production*
+
 ### **💻 Local Development Environment**
 ![Local Development Setup](docs/images/local-development-setup.png)
 *Python environment successfully configured with boto3, yfinance, and all dependencies installed for real-time data streaming to AWS Kinesis*
